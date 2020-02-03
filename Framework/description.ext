@@ -1,0 +1,99 @@
+__EXEC(HG_Profile = allVariables profileNamespace)
+
+/*
+    Header
+*/
+onLoadName = $STR_SYSTEM_DES_onLoadName;
+author = "Atlas1205";
+onLoadMission = $STR_SYSTEM_DES_onloadmission;
+loadScreen = "img\hrd_img.jpg";
+debriefing = 1;
+briefingName= $STR_SYSTEM_DES_briefingName;
+respawnOnStart = -1;
+respawn = "BASE";
+respawnDelay = 999999;
+//respawnTemplates[] = {"MenuPosition"};
+overviewText =  $STR_SYSTEM_DES_onloadmission;
+overviewPicture = "img\hrd_img.jpg";
+DisabledAI = 1;
+// class Extended_PreInit_EventHandlers
+// {
+	// UCD_pre_init = "call compile preProcessFileLineNumbers 'scripts\unitCaching\init.sqf'";
+// };
+
+class Extended_Init_EventHandlers
+{
+	class CAManBase
+	{
+		class Loot
+		{
+			//init = "(_this select 0) addEventHandler ['Killed',{ if (!( isPlayer (_this select 0)) )then	{[0,1]remoteexeccall ['hg_fnc_addorsubkills',(_this select 1),false];(_this select 0) remoteExecCall ['gp_fnc_lootAddAction',0,false]; 	if ((['enemydrop', 1] call BIS_fnc_getParamValue) <= 0) then {removeallweapons (_this select 0);removebackpack (_this select 0); };		}; }]";		
+			init = "(_this select 0) addEventHandler ['Killed',{ if (!( isPlayer (_this select 0)) && ( isPlayer (_this select 1)) )then	{[(_this select 1)]remoteexeccall ['Atlas_fnc_killreward',(_this select 1),false];	if ((['enemydrop', 1] call BIS_fnc_getParamValue) <= 0) then {removeallweapons (_this select 0);removebackpack (_this select 0); };		}; }]";			
+		};		
+	};
+
+};
+#include "outlw_magRepack\MagRepack_config.hpp"
+class CfgNotifications {
+    #include "Zen_FrameworkFunctions\Zen_TaskSystem\Zen_TaskNotifications.hpp"
+};
+
+#include "Zen_FrameworkFunctions\Zen_DialogSystem\Zen_Dialog.hpp"
+#include "Mission_params.hpp"
+#include "task_descriptions.hpp"
+#include "tracks.hpp"
+#include "HRD_UI\defines.hpp"
+#include "HRD_UI\ui_ShopMenu.hpp"
+#include "HRD_UI\ui_BuildMenu.hpp"
+class CfgDebriefing
+{	
+
+    #include "HG\Config\HG_Debriefing.h"
+	class end_a1
+	{
+		title = $STR_SYSTEM_DES_debrief_1_title;
+		description = $STR_SYSTEM_DES_debrief_1;
+	};
+		class end_failed
+	{
+		title = $STR_SYSTEM_DES_debrief_2_title;
+		description = $STR_SYSTEM_DES_debrief_2;
+	};
+};
+/*
+    Classes
+*/
+
+#include "HG\UI\HG_DialogsMaster.h"
+class RscTitles
+{
+    #include "HG\UI\Dialogs\HG_HUD.h"
+	#include "HG\UI\Dialogs\HG_Tags.h"
+};
+
+class CfgClient
+{
+    #include "HG\Config\HG_Config.h"
+};
+
+class CfgSounds
+{
+    #include "HG\Sounds\HG_Sounds.h"
+};
+
+class CfgFunctions 
+{
+	#include "HG\Functions\HG_Functions.h"
+	
+		class atlas
+	{
+		class mission
+		{
+			class preInit
+			{
+				file = "preInit.sqf";
+				preInit = 1;
+			};
+		};
+	};
+};
