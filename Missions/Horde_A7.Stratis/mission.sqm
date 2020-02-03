@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=3506;
+		nextID=3516;
 	};
 	class Camera
 	{
@@ -1024,7 +1024,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={2972.1492,4.1753025,6031.9736};
-								angles[]={-0,0.5750643,0};
+								angles[]={0,0.5750643,0};
 							};
 							side="Empty";
 							flags=4;
@@ -1035,6 +1035,7 @@ class Mission
 							};
 							id=868;
 							type="B_CargoNet_01_ammo_F";
+							atlOffset=-2.3841858e-007;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -1580,7 +1581,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={3049.9973,29.010313,6201.2935};
-								angles[]={-0,2.0259423,6.2806959};
+								angles[]={0,2.0259423,6.2806959};
 							};
 							side="Empty";
 							flags=4;
@@ -2692,7 +2693,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={2947.0437,4.3153028,5969.5996};
-								angles[]={-0,2.0905926,0};
+								angles[]={0,2.0905926,0};
 							};
 							side="Empty";
 							flags=4;
@@ -3537,6 +3538,7 @@ class Mission
 							};
 							id=10041;
 							type="B_CargoNet_01_ammo_F";
+							atlOffset=-2.3841858e-007;
 							class CustomAttributes
 							{
 								class Attribute0

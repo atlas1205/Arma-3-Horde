@@ -1559,6 +1559,12 @@
                 <Original>Control Chopper Gunner</Original>
                 <Chinesesimp>遥控武直炮手</Chinesesimp>
                 <Chinese>遥控武直炮手</Chinese>
+            </Key>			
+			
+							<Key ID="STR_System_GunnerInUse">
+                <Original>This chopper gunner is currently controlled by another player.</Original>
+                <Chinesesimp>该武直炮手目前正被另一名玩家使用。</Chinesesimp>
+                <Chinese>该武直炮手目前正被另一名玩家使用。</Chinese>
             </Key>	
 							<Key ID="str_system_randomchest">
                 <Original>&lt;t color='#00ffff'&gt;Draw a Random Reward($%1)&lt;/t&gt;</Original>

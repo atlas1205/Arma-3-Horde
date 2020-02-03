@@ -207,6 +207,7 @@ _chopper call {
 };
 [[_gunner],{(_this select 0) spawn Atlas_fnc_RemoteControl_Action}] remoteExec ['call',0,false];
 
+//_gunner setVariable ['undercontrol',1,true];
 };
 Atlas_fnc_RemoteControl_Action = 
 {
@@ -224,14 +225,21 @@ player removeAction _id
 Atlas_fnc_RemoteControl = 
 {
 params["_player","_dummy"];
-titleCut ["", "BLACK FADED", 999];
+if (
+((UAVControl (vehicle _dummy)) select 0) isEqualTo objnull
+) then {
+titleCut ["", "BLACK OUT", 1];
 sleep 1;
 _player remoteControl _dummy;
 _dummy switchCamera "Internal";
+//_dummy setVariable ['undercontrol',1,true];
 sleep 1;
-titleCut ["", "BLACK IN", 3];
+titleCut ["", "BLACK IN", 2];
+	} else {
+	//tell the user no
+	systemChat (localize "STR_System_GunnerInUse");
+	};
 };
-
 Atlas_fnc_randomchest_draw = {
 _box  = _this select 0;
 _caller  = _this select 1;
