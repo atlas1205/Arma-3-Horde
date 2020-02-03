@@ -19,14 +19,20 @@ player setVariable ['ATLAS_HRD_Cash',(master getvariable [str (getPlayerUID play
 building = false;
 player addaction ["<t color='#FF0000'>"+(localize "STR_UI_TEXT_8")+"</t>",{[] execVM "HRD_UI\ui_build.sqf"},nil,10,false,true,"","",2,false];
 sleep 3;
-[0] call hg_fnc_hud;
-/*
-if (_resetkill > 0) then {
-[1,100000] call hg_fnc_addorsubkills;
-};
-*/
+
 if (_resetXP > 0) then {
 player setrank "private";
 [99999999,1] call hg_fnc_addorsubxp;
+};
+[0] call hg_fnc_hud;
+//kill player if out of bound
+[]spawn {
+while {true} do {
+	if !(player inArea "dead_zone") then 
+	{
+	player setDamage 1;
+	};
+	sleep 60;
+	};
 };
 [(localize 'str_info_author'),0,0.7,2,1,0,789] spawn BIS_fnc_dynamicText;

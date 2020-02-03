@@ -6,7 +6,7 @@ BUILD_LIST_4 = [];
 BUILD_LIST_1 = [
 ['Land_Ammobox_rounds_F',(localize "STR_BUILDLIST_1"),500,{_this spawn Atlas_fnc_build_ammobox;},true,true],
 ['Land_FirstAidKit_01_closed_F', (localize "STR_BUILDLIST_3"),500,{_this spawn Atlas_fnc_build_firstaid;},true,true],
-['Box_NATO_AmmoVeh_F', (localize "STR_BUILDLIST_2"),20000,{_this spawn Atlas_fnc_build_ammobox_1;},true,true],
+['Box_NATO_AmmoVeh_F', (localize "STR_BUILDLIST_2"),10000,{_this spawn Atlas_fnc_build_ammobox_1;},true,true],
 ['CargoNet_01_box_F', (localize "STR_BUILDLIST_4"),5000,{_this allowdamage false;},true,true],
 ['FlexibleTank_01_forest_F', "",500,{},true,true],
 ['Land_RepairDepot_01_green_F', "",1000,{},true,true],

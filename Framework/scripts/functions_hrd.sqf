@@ -372,8 +372,8 @@ if !([_cost] call HG_fnc_hasEnoughMoney) exitwith {
 
 };
 switch (build_type) do {
-default {_built = createVehicle [_class, current_pos, [], 0, "CAN_COLLIDE"];_built allowdamage false;_built setdir build_dir;};
-case 3: {_built = createVehicle [_class, current_pos, [], 0, ""];_built allowdamage false;_built setdir build_dir;};
+default {_built = createVehicle [_class, current_pos, [], 0, "CAN_COLLIDE"];[_built, false] remoteExec ["allowdamage", 0];_built setdir build_dir;};
+case 3: {_built = createVehicle [_class, current_pos, [], 0, ""];_built setdir build_dir;};
 case 4: {_built = createMine [_class, current_pos, [], 0];(side player) revealmine _built;_built setdir (build_dir+180);};
 };
 
