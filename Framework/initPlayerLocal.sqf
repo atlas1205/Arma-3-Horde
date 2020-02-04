@@ -26,6 +26,7 @@ player setrank "private";
 };
 [0] call hg_fnc_hud;
 player synchronizeObjectsAdd [SR];
+SR synchronizeObjectsAdd [player];
 //kill player if out of bound
 []spawn {
 while {true} do {
