@@ -5,7 +5,7 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=641;
+	toggles=513;
 	class ItemIDProvider
 	{
 		nextID=7686;
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=3126;
+		nextID=3146;
 	};
 	class Camera
 	{
-		pos[]={21973.377,30.756636,21038.105};
-		dir[]={0.95122081,-0.23144688,-0.20449929};
-		up[]={0.22631194,0.97283244,-0.048655234};
-		aside[]={-0.21021096,6.519258e-007,-0.97777861};
+		pos[]={21995.801,53.33012,21028.371};
+		dir[]={0,-0.70710683,0.70710683};
+		up[]={0,0.70710677,0.70710677};
+		aside[]={0.99999994,0,-0};
 	};
 };
 binarizationWanted=0;
@@ -354,25 +354,6 @@ class CustomAttributes
 		name="Scenario";
 		class Attribute0
 		{
-			property="EnableDebugConsole";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"SCALAR"
-						};
-					};
-					value=1;
-				};
-			};
-		};
-		class Attribute1
-		{
 			property="Enh_dynamicGroups";
 			expression="		if (!is3DEN && isServer && _value && !(allCurators isEqualTo [])) then		{			[] spawn			{				while {true} do				{					{						 _x addCuratorEditableObjects						 [						 	entities [[],['Logic'],true],						  	true						 ];					} count allCurators;					sleep 60;				};			};		}";
 			class Value
@@ -384,6 +365,25 @@ class CustomAttributes
 						type[]=
 						{
 							"BOOL"
+						};
+					};
+					value=1;
+				};
+			};
+		};
+		class Attribute1
+		{
+			property="EnableDebugConsole";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
 						};
 					};
 					value=1;
@@ -5936,11 +5936,11 @@ class Mission
 						class Item9
 						{
 							dataType="Marker";
-							position[]={21994.496,29.006775,21050.094};
+							position[]={21995.385,29.006775,21051.973};
 							name="airdrop_backup";
 							type="Empty";
 							id=2958;
-							atlOffset=0.70807457;
+							atlOffset=0.67763519;
 						};
 						class Item10
 						{
@@ -6194,11 +6194,11 @@ class Mission
 						};
 					};
 					id=3205;
-					atlOffset=0.19582748;
+					atlOffset=0.18560791;
 				};
 			};
 			id=2004;
-			atlOffset=1.8337555;
+			atlOffset=1.8341522;
 		};
 		class Item1
 		{

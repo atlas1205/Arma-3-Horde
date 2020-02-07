@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=3516;
+		nextID=3526;
 	};
 	class Camera
 	{
-		pos[]={2693.0684,23.520836,6033.2754};
-		dir[]={0.81411606,-0.26937297,0.51445502};
-		up[]={0.22771846,0.96303618,0.14389946};
-		aside[]={0.53420132,-1.717126e-009,-0.84536332};
+		pos[]={3336.281,62.619827,5707.9434};
+		dir[]={0.20355393,-0.85314757,0.4803299};
+		up[]={0.33289117,0.52165967,0.78552985};
+		aside[]={0.92074221,-3.3156539e-008,-0.39019173};
 	};
 };
 binarizationWanted=0;
@@ -1007,7 +1007,6 @@ class Mission
 		{
 			dataType="Layer";
 			name="Backstage_1";
-			state=1;
 			class Entities
 			{
 				items=4;
@@ -3816,13 +3815,12 @@ class Mission
 							dataType="Logic";
 							class PositionInfo
 							{
-								position[]={3948.9026,8.5507269,5307.0864};
-								angles[]={6.2606897,0,0.012496647};
+								position[]={3367.6836,7.0984402,5749.0093};
+								angles[]={0.024993783,0,0.019996032};
 							};
 							name="ART";
 							id=2924;
 							type="SupportProvider_Virtual_Artillery";
-							atlOffset=-70.476288;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -4239,7 +4237,7 @@ class Mission
 						};
 					};
 					id=2943;
-					atlOffset=37.56308;
+					atlOffset=58.969376;
 				};
 				class Item2
 				{
@@ -6364,11 +6362,11 @@ class Mission
 							{
 							};
 							id=4;
-							atlOffset=142.91;
+							atlOffset=-4.529953e-006;
 						};
 					};
 					id=1954;
-					atlOffset=142.91;
+					atlOffset=-4.529953e-006;
 				};
 				class Item3
 				{
@@ -6852,7 +6850,7 @@ class Mission
 							b=300;
 							drawBorder=1;
 							id=10039;
-							atlOffset=179.53343;
+							atlOffset=179.53337;
 						};
 					};
 					id=3205;
@@ -6860,7 +6858,7 @@ class Mission
 				};
 			};
 			id=2004;
-			atlOffset=18.700226;
+			atlOffset=70.519127;
 		};
 		class Item1
 		{
