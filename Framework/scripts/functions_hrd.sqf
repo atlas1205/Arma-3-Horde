@@ -229,10 +229,8 @@ if (
 ((UAVControl (vehicle _dummy)) select 0) isEqualTo objnull
 ) then {
 titleCut ["", "BLACK OUT", 1];
-sleep 1;
 _player remoteControl _dummy;
 _dummy switchCamera "Internal";
-//_dummy setVariable ['undercontrol',1,true];
 sleep 1;
 titleCut ["", "BLACK IN", 2];
 	} else {
