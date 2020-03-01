@@ -1295,7 +1295,7 @@
 				<Chinesesimp>敌群生存2: 雷达基地</Chinesesimp>
 				</Key>			
 				<Key ID="STR_SYSTEM_DES_onLoadName">
-				<Original>HS1: Air Station</Original>
+				<Original>HS2: Air Station</Original>
 				<Chinesesimp>敌群生存2: 雷达基地</Chinesesimp>
 				</Key>		
 				<Key ID="STR_SYSTEM_DES_onloadmission">
@@ -1305,7 +1305,7 @@
    </Package>
  </Project>
  
-   	<Project name="Horde">
+<Project name="Horde">
    <Package name="General">
    												
 				<Key ID="STR_SYSTEM_DES_disable">
@@ -1878,6 +1878,11 @@
 				    <Original>Sniper/Marksman Rifle</Original>
 			<Chinese>狙击枪</Chinese>
 			<Chinesesimp>狙击枪</Chinesesimp>
+		</Key>
+					    <Key ID="STR_HRD_SHOP_weapon_primary_shotgun">
+				    <Original>Shotgun</Original>
+			<Chinese>霰弹枪</Chinese>
+			<Chinesesimp>霰弹枪</Chinesesimp>
 		</Key>
 					    <Key ID="STR_HG_SHOP_ITEMS_gnd">
 				    <Original>Grenades</Original>
