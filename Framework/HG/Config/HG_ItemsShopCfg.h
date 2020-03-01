@@ -815,7 +815,7 @@ class Under
 		{"tf_microdagr",150,"true"}
 		};
 	};
-	
+	/*
 		class Magazines
 	{
 	    displayName = "$STR_HG_SHOP_MAGAZINES";
@@ -1577,4 +1577,5 @@ class Under
 				{"Laserbatteries",40,"true"}
 		};
 	};
+*/
 };
