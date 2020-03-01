@@ -77,15 +77,15 @@ _magdata = (_list select _index);
 _magclass = _magdata select 0;
 _price = _magdata select 1;
 	if !([_price] call HG_fnc_hasEnoughMoney) exitwith {
-	systemChat (localize ("str_system_nofund"));
+	systemChat (localize ("STR_AmmoUI_noMoney"));
 	};
 			if (_buyer canAdd [_magclass, 1]) then {
 	_user addMagazines [_magclass, 1];
 	[_price,1] remoteexeccall ["hg_fnc_addorsubcash",_buyer,false];
-	{systemChat (localize ("str_system_rearm_successful"))} remoteexeccall ["call",_buyer,false];
+	{systemChat (localize ("STR_AmmoUI_success"))} remoteexeccall ["call",_buyer,false];
 	}
 	else {
-	{systemChat (localize ("str_system_rearm_nospace"))} remoteexeccall ["call",_buyer,false];
+	{systemChat (localize ("STR_AmmoUI_noSpace"))} remoteexeccall ["call",_buyer,false];
 	};
 	};
 };

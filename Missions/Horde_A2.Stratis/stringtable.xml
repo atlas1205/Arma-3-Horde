@@ -1925,5 +1925,20 @@
 			<Original>Launcher</Original>
 			<Chinese>发射器</Chinese>
 			<Chinesesimp>发射器</Chinesesimp>
+		</Key>				
+		<Key ID="STR_AmmoUI_success">
+			<Original>Ammo purchased.</Original>
+			<Chinese>弹药已购买。</Chinese>
+			<Chinesesimp>弹药已购买。</Chinesesimp>
+		</Key>		
+		<Key ID="STR_AmmoUI_noSpace">
+			<Original>Purchase failed: not enough inventory space.</Original>
+			<Chinese>购买失败:物品栏空间不足。</Chinese>
+			<Chinesesimp>购买失败:物品栏空间不足。</Chinesesimp>
+		</Key>
+		<Key ID="STR_AmmoUI_noMoney">
+			<Original>Purchase failed: not enough money.</Original>
+			<Chinese>购买失败:金钱不足。</Chinese>
+			<Chinesesimp>购买失败:金钱不足。</Chinesesimp>
 		</Key>
 </Project>
