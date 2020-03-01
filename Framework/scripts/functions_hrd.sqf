@@ -752,3 +752,5 @@ _unit setVariable ['HG_Kills',(_kill+1),true];
 [_xpreward,0] call HG_fnc_addOrSubXP;
 [0] call HG_fnc_HUD;
 };
+
+#include "buyAmmo.sqf"

@@ -1284,6 +1284,28 @@
 	</Package>
 </Project>
 
+<Project name="Horde_STATIC">
+   <Package name="STATICTEXT">
+      			<Key ID="str_info_author">
+                <Original>Horde Survival 1: Old Research Base&lt;br/&gt;Present by Atlas1205</Original>
+                <Chinesesimp>敌群生存1：旧研究所&lt;br/&gt;制作人:Atlas1205</Chinesesimp>
+            </Key>
+								<Key ID="STR_SYSTEM_DES_briefingName">
+				<Original>Horde Survival 1: Old Research Base</Original>
+				<Chinesesimp>敌群生存1: 旧研究所</Chinesesimp>
+				</Key>			
+				<Key ID="STR_SYSTEM_DES_onLoadName">
+				<Original>HS1: Old Research Base</Original>
+				<Chinesesimp>敌群生存1: 旧研究所</Chinesesimp>
+				</Key>		
+
+				<Key ID="STR_SYSTEM_DES_onloadmission">
+				  <Original>Survive against waves of increasingly more difficult enemies.</Original>
+				<Chinesesimp>在数波愈发困难的敌人攻击中幸存下来。</Chinesesimp>
+				</Key>
+   </Package>
+ </Project>
+   
 <Project name="Horde">
    <Package name="General">
    												
@@ -1407,23 +1429,7 @@
 				<Chinesesimp>随机</Chinesesimp>
 				<Chinese>隨機</Chinese>
 			</Key>
-   			<Key ID="str_info_author">
-                <Original>Horde Survival 1: Old Research Base&lt;br/&gt;Present by Atlas1205</Original>
-                <Chinesesimp>敌群生存 1：旧研究所&lt;br/&gt;制作人:Atlas1205</Chinesesimp>
-            </Key>
-
-				<Key ID="STR_SYSTEM_DES_onloadmission">
-				  <Original>Survive against waves of increasingly more difficult enemies.</Original>
-				<Chinesesimp>在数波愈发困难的敌人攻击中幸存下来。</Chinesesimp>
-				</Key>
-								<Key ID="STR_SYSTEM_DES_briefingName">
-				<Original>Horde Survival 1: Old Research Base</Original>
-				<Chinesesimp>敌群生存1: 旧研究所</Chinesesimp>
-				</Key>			
-				<Key ID="STR_SYSTEM_DES_onLoadName">
-				<Original>HS1: Old Research Base</Original>
-				<Chinesesimp>敌群生存1: 旧研究所</Chinesesimp>
-				</Key>				
+		
 					<Key ID="STR_SYSTEM_DES_debrief_1_title">
 					<Original>Mission Complete</Original>
 					<Chinesesimp>任务完成</Chinesesimp>
@@ -1652,7 +1658,12 @@
                 <Chinese>随机抽奖箱</Chinese>
 		</Key>
 	</Package>
-	<Package name="UI_txt">
+	<Package name="UI_txt">			
+		<Key ID="STR_UI_TEXT_0">
+                <Original>Main Shop Menu v2.0</Original>
+                <Chinesesimp>商店主菜单 v2.0</Chinesesimp>
+                <Chinese>商店主菜单 v2.0</Chinese>
+		</Key>
 			<Key ID="STR_UI_TEXT_1">
                 <Original>Gear shop</Original>
                 <Chinesesimp>装备商店</Chinesesimp>
@@ -1683,10 +1694,15 @@
                 <Chinesesimp>装备商店</Chinesesimp>
                 <Chinese>装备商店</Chinese>
 		</Key>
-			<Key ID="STR_UI_TEXT_7">
-                <Original>Item/ammo shop</Original>
-                <Chinesesimp>物品/弹药商店</Chinesesimp>
-                <Chinese>物品/弹药商店</Chinese>
+			<Key ID="STR_UI_TEXT_7_1">
+                <Original>Ammo shop</Original>
+                <Chinesesimp>弹药商店</Chinesesimp>
+                <Chinese>弹药商店</Chinese>
+		</Key>
+			<Key ID="STR_UI_TEXT_7_2">
+                <Original>Item shop</Original>
+                <Chinesesimp>物品商店</Chinesesimp>
+                <Chinese>物品商店</Chinese>
 		</Key>
 			<Key ID="STR_UI_TEXT_8">
                 <Original>==Build==</Original>

@@ -1283,10 +1283,30 @@
 		</Key>
 	</Package>
 </Project>
+   <Project name="Horde_STATIC">
+   <Package name="STATICTEXT">
+      			<Key ID="str_info_author">
+                <Original>Horde Survival 3: Abandoned Hotel&lt;br/&gt;Present by Atlas1205</Original>
+                <Chinesesimp>敌群生存3: 废弃酒店&lt;br/&gt;制作人:Atlas1205</Chinesesimp>
+            </Key>
 
+								<Key ID="STR_SYSTEM_DES_briefingName">
+				<Original>Horde Survival 3: Air Station</Original>
+				<Chinesesimp>敌群生存3: 废弃酒店</Chinesesimp>
+				</Key>			
+				<Key ID="STR_SYSTEM_DES_onLoadName">
+				<Original>HS1: Air Station</Original>
+				<Chinesesimp>敌群生存3: 废弃酒店</Chinesesimp>
+				</Key>		
+				<Key ID="STR_SYSTEM_DES_onloadmission">
+				  <Original>Survive against waves of increasingly more difficult enemies.</Original>
+				<Chinesesimp>在数波愈发困难的敌人攻击中幸存下来。</Chinesesimp>
+				</Key>
+   </Package>
+ </Project>
 <Project name="Horde">
    <Package name="General">
-    												
+   												
 				<Key ID="STR_SYSTEM_DES_disable">
 				<Original>Disable</Original>
 				<Chinesesimp>关闭</Chinesesimp>
@@ -1313,8 +1333,8 @@
 				</Key>
 				
 				<Key ID="STR_SYSTEM_DES_3">
-			    <Original>Kill Reward (number * wave number)</Original>
-				<Chinesesimp>击杀奖励(数值*波数)</Chinesesimp>
+			    <Original>Reset Kill</Original>
+				<Chinesesimp>重置击杀数</Chinesesimp>
 				</Key>
 				
 				<Key ID="STR_SYSTEM_DES_4">
@@ -1366,12 +1386,12 @@
 				<Original>Enemy vehicle supports</Original>
 				<Chinesesimp>敌人载具支援</Chinesesimp>
 				</Key>	
-						
+								
+		
 				<Key ID="STR_SYSTEM_DES_14">
 				<Original>Execute enemy deserters(may cause sudden death to enemies)</Original>
 				<Chinesesimp>处死敌人逃兵(可能造成敌人暴毙)</Chinesesimp>
 				</Key>	
-				
 				
 				<Key ID="STR_SYSTEM_DES_Inf">
 				<Original>Infinite</Original>
@@ -1407,22 +1427,7 @@
 				<Chinesesimp>随机</Chinesesimp>
 				<Chinese>隨機</Chinese>
 			</Key>
-   			<Key ID="str_info_author">
-                <Original>Horde Survival 3: Abandoned Hotel&lt;br/&gt;Present by Atlas1205</Original>
-                <Chinesesimp>敌群生存3：废弃酒店&lt;br/&gt;制作人:Atlas1205</Chinesesimp>
-            </Key>
-						<Key ID="STR_SYSTEM_DES_onloadmission">
-				  <Original>Survive against waves of increasingly more difficult enemies.</Original>
-				<Chinesesimp>在数波愈发困难的敌人攻击中幸存下来。</Chinesesimp>
-				</Key>
-								<Key ID="STR_SYSTEM_DES_briefingName">
-				<Original>Horde Survival 3: Abandoned Hotel</Original>
-				<Chinesesimp>敌群生存3: 废弃酒店</Chinesesimp>
-				</Key>			
-				<Key ID="STR_SYSTEM_DES_onLoadName">
-				<Original>HS3: Abandoned Hotel</Original>
-				<Chinesesimp>敌群生存3: 废弃酒店</Chinesesimp>
-				</Key>				
+		
 					<Key ID="STR_SYSTEM_DES_debrief_1_title">
 					<Original>Mission Complete</Original>
 					<Chinesesimp>任务完成</Chinesesimp>
@@ -1495,7 +1500,7 @@
 						<Key ID="str_system_garage">
                 <Original>Garage </Original>
                 <Chinesesimp>车库 </Chinesesimp>
-            </Key>		
+					</Key>		
 					<Key ID="str_system_countdownhint">
                 <Original>Next wave starts in %1 s.</Original>
                 <Chinesesimp>下一波%1秒后开始。</Chinesesimp>
@@ -1553,7 +1558,8 @@
                 <Original>Buy Artillery Support ($%1)</Original>
                 <Chinesesimp>购买火炮支援 ($%1)</Chinesesimp>
                 <Chinese>购买火炮支援 ($%1)</Chinese>
-            </Key>					
+            </Key>			
+			
 							<Key ID="str_system_controlgunner">
                 <Original>Control Chopper Gunner</Original>
                 <Chinesesimp>遥控武直炮手</Chinesesimp>
@@ -1566,12 +1572,12 @@
                 <Chinese>该武直炮手目前正被另一名玩家使用。</Chinese>
             </Key>		
 			
-							<Key ID="str_system_randomchest">
+				<Key ID="str_system_randomchest">
                 <Original>&lt;t color='#00ffff'&gt;Draw a Random Reward($%1)&lt;/t&gt;</Original>
                 <Chinesesimp>&lt;t color='#00ffff'&gt;抽取随机奖励 ($%1)&lt;/t&gt;</Chinesesimp>
                 <Chinese>&lt;t color='#00ffff'&gt;抽取随机奖励 ($%1)&lt;/t&gt;</Chinese>
             </Key>			
-									<Key ID="str_system_addsupport_success">
+				<Key ID="str_system_addsupport_success">
                 <Original>Support purchased.</Original>
                 <Chinesesimp>支援已购买。</Chinesesimp>
                 <Chinese>支援已购买。</Chinese>
@@ -1628,7 +1634,7 @@
                 <Original>You can buy weapons, equipment and supports at the shop, and buy and store vehicles at the garage using your fund. Loot enemy dead bodies for money and exp. A higher rank will give you a higher discount at the shop.&lt;br/&gt;&lt;br/&gt;Press H to give your fund to another player.&lt;br/&gt;Press U for dynamic groups menu.</Original>
                 <Chinesesimp>你可以花费资金在商店购买武器，装备和支援，在车库购买和储存载具。掠夺敌人的尸体来缴获金钱和经验。越高的军衔在商店有越大的折扣。&lt;br/&gt;&lt;br/&gt;按H给予其他玩家资金。&lt;br/&gt;按U打开组队菜单。</Chinesesimp>
                 <Chinese>你可以花费资金在商店购买武器，装备和支援，在车库购买和储存载具。掠夺敌人的尸体来缴获金钱和经验。越高的军衔在商店有越大的折扣。&lt;br/&gt;&lt;br/&gt;按H给予其他玩家资金。&lt;br/&gt;按U打开组队菜单。</Chinese>
-		</Key>		   			   	  	
+		</Key>		   	
 		<Key ID="STR_TASK_wave">
                 <Original>You must survive %1 waves to win the game.</Original>
                 <Chinesesimp>你必须存活%1波以胜出。</Chinesesimp>
@@ -1650,7 +1656,12 @@
                 <Chinese>随机抽奖箱</Chinese>
 		</Key>
 	</Package>
-	<Package name="UI_txt">
+	<Package name="UI_txt">			
+		<Key ID="STR_UI_TEXT_0">
+                <Original>Main Shop Menu v2.0</Original>
+                <Chinesesimp>商店主菜单 v2.0</Chinesesimp>
+                <Chinese>商店主菜单 v2.0</Chinese>
+		</Key>
 			<Key ID="STR_UI_TEXT_1">
                 <Original>Gear shop</Original>
                 <Chinesesimp>装备商店</Chinesesimp>
@@ -1681,10 +1692,15 @@
                 <Chinesesimp>装备商店</Chinesesimp>
                 <Chinese>装备商店</Chinese>
 		</Key>
-			<Key ID="STR_UI_TEXT_7">
-                <Original>Item/ammo shop</Original>
-                <Chinesesimp>物品/弹药商店</Chinesesimp>
-                <Chinese>物品/弹药商店</Chinese>
+			<Key ID="STR_UI_TEXT_7_1">
+                <Original>Ammo shop</Original>
+                <Chinesesimp>弹药商店</Chinesesimp>
+                <Chinese>弹药商店</Chinese>
+		</Key>
+			<Key ID="STR_UI_TEXT_7_2">
+                <Original>Item shop</Original>
+                <Chinesesimp>物品商店</Chinesesimp>
+                <Chinese>物品商店</Chinese>
 		</Key>
 			<Key ID="STR_UI_TEXT_8">
                 <Original>==Build==</Original>
@@ -1731,7 +1747,7 @@
                 <Chinesesimp>前后</Chinesesimp>
                 <Chinese>前后</Chinese>
 		</Key>
-				<Key ID="STR_UI_TEXT_15">
+			<Key ID="STR_UI_TEXT_15">
                 <Original>Building Types</Original>
                 <Chinesesimp>建筑类型</Chinesesimp>
                 <Chinese>建筑类型</Chinese>
@@ -1781,7 +1797,6 @@
 		</Key>
 	</Package>
 	
-		
 		<Package name="Shop_UI">
    	    <Key ID="STR_HRD_SHOP_TRADER">
                 <Original>&lt;t color='#FF0000'&gt;Second-hand Trader&lt;/t&gt;</Original>
