@@ -15,7 +15,7 @@ class Atlas_AmmoUI
 				y = 3 * GUI_GRID_H + GUI_GRID_Y;
 				w = 33.5 * GUI_GRID_W;
 				h = 21 * GUI_GRID_H;
-				colorBackground[] = {-1,-1,-1,0.8};
+				colorBackground[] = {-1,-1,-1,0.6};
 			};
 			class RscFrame_1800: RscFrame
 			{
