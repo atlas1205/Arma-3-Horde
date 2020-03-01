@@ -36,7 +36,7 @@ class HRD_shopmenu
 		class RscButton_1600: RscButton
 		{
 			idc = 1600;
-			action = "_index = (lbCurSel 1500);[_index] execvm 'HRD_UI\ui_handleshop.sqf';";
+			action = "_index = (lbCurSel 1500);[_index +3] execvm 'HRD_UI\ui_handleshop.sqf';";
 		
 			text = $STR_UI_TEXT_4; //--- ToDo: Localize;
 			x = 3.5 * GUI_GRID_W + GUI_GRID_X;

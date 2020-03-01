@@ -1,9 +1,9 @@
 disableSerialization;
 
 _items = [
-format [(localize "str_system_rearm_1"),REARM_PRICE_1],
-format [(localize "str_system_rearm_2"),REARM_PRICE_2],
-format [(localize "str_system_rearm_3"),REARM_PRICE_3],
+// format [(localize "str_system_rearm_1"),REARM_PRICE_1],
+// format [(localize "str_system_rearm_2"),REARM_PRICE_2],
+// format [(localize "str_system_rearm_3"),REARM_PRICE_3],
 format [(localize "str_system_rearm_4"),REARM_PRICE_4],
 format [(localize "str_system_rearm_5"),REARM_PRICE_5],
 format [(localize "str_system_rearm_6"),REARM_PRICE_6],

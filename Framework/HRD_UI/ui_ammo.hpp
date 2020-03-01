@@ -21,7 +21,7 @@ class Atlas_AmmoUI
 			{
 				idc = 1800;
 			
-				text = "Purchase Ammo"; //--- ToDo: Localize;
+				text = $STR_AmmoUI_title; //--- ToDo: Localize;
 				x = 5 * GUI_GRID_W + GUI_GRID_X;
 				y = 3 * GUI_GRID_H + GUI_GRID_Y;
 				w = 32.5 * GUI_GRID_W;
@@ -42,7 +42,7 @@ class Atlas_AmmoUI
 			{
 				idc = 1600;
 			
-				text = "Purchase"; //--- ToDo: Localize;
+				text = $STR_AmmoUI_buy; //--- ToDo: Localize;
 				x = 6 * GUI_GRID_W + GUI_GRID_X;
 				y = 21 * GUI_GRID_H + GUI_GRID_Y;
 				w = 14 * GUI_GRID_W;
@@ -54,7 +54,7 @@ class Atlas_AmmoUI
 				idc = 1601;
 				action = "closeDialog 0";
 			
-				text = "Exit"; //--- ToDo: Localize;
+				text = $STR_AmmoUI_exit; //--- ToDo: Localize;
 				x = 22 * GUI_GRID_W + GUI_GRID_X;
 				y = 21 * GUI_GRID_H + GUI_GRID_Y;
 				w = 14.5 * GUI_GRID_W;
@@ -64,7 +64,7 @@ class Atlas_AmmoUI
 			{
 				idc = 1602;
 			
-				text = "Primary"; //--- ToDo: Localize;
+				text = $STR_AmmoUI_pri; //--- ToDo: Localize;
 				x = 7 * GUI_GRID_W + GUI_GRID_X;
 				y = 4 * GUI_GRID_H + GUI_GRID_Y;
 				w = 8 * GUI_GRID_W;
@@ -75,7 +75,7 @@ class Atlas_AmmoUI
 			{
 				idc = 1603;
 			
-				text = "Launcher"; //--- ToDo: Localize;
+				text = $STR_AmmoUI_laun; //--- ToDo: Localize;
 				x = 27 * GUI_GRID_W + GUI_GRID_X;
 				y = 4 * GUI_GRID_H + GUI_GRID_Y;
 				w = 8 * GUI_GRID_W;
@@ -86,7 +86,7 @@ class Atlas_AmmoUI
 			{
 				idc = 1604;
 			
-				text = "Secondary"; //--- ToDo: Localize;
+				text = $STR_AmmoUI_sec; //--- ToDo: Localize;
 				x = 17 * GUI_GRID_W + GUI_GRID_X;
 				y = 4 * GUI_GRID_H + GUI_GRID_Y;
 				w = 8 * GUI_GRID_W;

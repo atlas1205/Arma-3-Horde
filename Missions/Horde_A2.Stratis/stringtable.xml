@@ -1304,7 +1304,6 @@
 				</Key>
    </Package>
  </Project>
- 
 <Project name="Horde">
    <Package name="General">
    												
@@ -1657,7 +1656,8 @@
                 <Chinese>随机抽奖箱</Chinese>
 		</Key>
 	</Package>
-	<Package name="UI_txt">			
+</Project>
+	<Project name="UI_txt">			
 		<Key ID="STR_UI_TEXT_0">
                 <Original>Main Shop Menu v2.0</Original>
                 <Chinesesimp>商店主菜单 v2.0</Chinesesimp>
@@ -1774,8 +1774,8 @@
                 <Chinese>地雷</Chinese>
 		</Key>
 		
-	</Package>
-		<Package name="BuildList">
+	</Project>
+		<Project name="BuildList">
 					<Key ID="STR_BUILDLIST_1">
                 <Original>Ammo Box (Rearm)</Original>
                 <Chinesesimp>弹药箱(重新武装)</Chinesesimp>
@@ -1797,8 +1797,8 @@
                 <Chinese>储物箱</Chinese>
 		</Key>
 	</Package>
-	
-		<Package name="Shop_UI">
+</Project>
+<Project name="Shop_UI">
    	    <Key ID="STR_HRD_SHOP_TRADER">
                 <Original>&lt;t color='#FF0000'&gt;Second-hand Trader&lt;/t&gt;</Original>
                 <Chinesesimp>&lt;t color='#ff0000'&gt;二手交易商&lt;/t&gt;</Chinesesimp>
@@ -1895,4 +1895,35 @@
 			<Chinesesimp>爆炸物</Chinesesimp>
 		</Key>
 	</Package>
+		<Project name="Ammo_UI">
+		<Key ID="STR_AmmoUI_title">
+			<Original>Purchase ammo</Original>
+			<Chinese>购买弹药</Chinese>
+			<Chinesesimp>购买弹药</Chinesesimp>
+		</Key>
+				<Key ID="STR_AmmoUI_buy">
+			<Original>Purchase selected</Original>
+			<Chinese>购买所选</Chinese>
+			<Chinesesimp>购买所选</Chinesesimp>
+		</Key>
+				<Key ID="STR_AmmoUI_exit">
+			<Original>Exit</Original>
+			<Chinese>退出</Chinese>
+			<Chinesesimp>退出</Chinesesimp>
+		</Key>
+				<Key ID="STR_AmmoUI_pri">
+			<Original>Primary</Original>
+			<Chinese>主武器</Chinese>
+			<Chinesesimp>主武器</Chinesesimp>
+		</Key>
+				<Key ID="STR_AmmoUI_sec">
+			<Original>Secondary</Original>
+			<Chinese>副武器</Chinese>
+			<Chinesesimp>副武器</Chinesesimp>
+		</Key>
+				<Key ID="STR_AmmoUI_laun">
+			<Original>Launcher</Original>
+			<Chinese>发射器</Chinese>
+			<Chinesesimp>发射器</Chinesesimp>
+		</Key>
 </Project>

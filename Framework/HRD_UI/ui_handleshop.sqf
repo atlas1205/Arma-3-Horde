@@ -2,17 +2,17 @@ _index = _this select 0;
 
 switch (_index) do {
 default {
-[player,0,REARM_PRICE_1] call Atlas_fnc_QuickRearm;
+[player,4,REARM_PRICE_4] call Atlas_fnc_QuickRearm;
 };
-case 0: {
-[player,0,REARM_PRICE_1] call Atlas_fnc_QuickRearm;
-};
-case 1: {
-[player,1,REARM_PRICE_2] call Atlas_fnc_QuickRearm;
-};
-case 2: {
-[player,2,REARM_PRICE_3] call Atlas_fnc_QuickRearm;
-};
+// case 0: {
+// [player,0,REARM_PRICE_1] call Atlas_fnc_QuickRearm;
+// };
+// case 1: {
+// [player,1,REARM_PRICE_2] call Atlas_fnc_QuickRearm;
+// };
+// case 2: {
+// [player,2,REARM_PRICE_3] call Atlas_fnc_QuickRearm;
+// };
 case 3: {
 [player,3,REARM_PRICE_4] call Atlas_fnc_QuickRearm;
 };
