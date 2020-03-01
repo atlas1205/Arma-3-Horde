@@ -72,6 +72,7 @@ ammo_list = [];
 //called from UI
 Atlas_fnc_buyAmmo = {
 params [["_index",0],["_list",ammo_list],["_buyer",player],["_user",player]];
+if !(count _list <= 0) then{
 _magdata = (_list select _index);
 _magclass = _magdata select 0;
 _price = _magdata select 1;
@@ -85,6 +86,7 @@ _price = _magdata select 1;
 	}
 	else {
 	{systemChat (localize ("str_system_rearm_nospace"))} remoteexeccall ["call",_buyer,false];
+	};
 	};
 };
 
