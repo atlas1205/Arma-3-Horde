@@ -15,39 +15,37 @@ _others = (getArray (configFile>> "CfgWeapons" >> _gun >> _x >> "magazines"));
 	_mags pushBackUnique (_others select _i);
 	}; 
 }foreach _muzzles;
-_mags;
+_mags
 };
 
 Atlas_fnc_magPrice = {
 params ["_mag"];
 disableserialization;
-_ammo = getText (configFile>> "CfgMagazines" >> _mag >> "ammo");
-_type = getText (configfile >> "CfgAmmo" >> _ammo >> "simulation");
-//"shotBullet";"shotSmokeX";"shotShell";"shotIlluminating";
-_exp = isClass(configfile >> "CfgAmmo" >> _ammo >> "explosionEffectsRadius");
-_expcoef = getNumber (configfile >> "CfgAmmo" >> _ammo >> "explosionForceCoef");
-_exprad = getNumber (configfile >> "CfgAmmo" >> _ammo >> "explosionEffectsRadius");
-_cal = getNumber (configFile>> "CfgAmmo" >> _ammo >> "caliber");
-_hit = getNumber (configFile>> "CfgAmmo" >> _ammo >> "hit");
-_cnt = getNumber (configFile>> "CfgMagazines" >> _mag >> "count");
+private _ammo = getText (configFile>> "CfgMagazines" >> _mag >> "ammo");
+private _type = getText (configfile >> "CfgAmmo" >> _ammo >> "simulation");
+private _indirectHit = getNumber(configFile >> "CfgAmmo" >> _ammo >> "indirectHit");
+private _indirectHitRange = getNumber(configFile >> "CfgAmmo" >> _ammo >> "indirectHitRange");
+private _cal = getNumber (configFile>> "CfgAmmo" >> _ammo >> "caliber");
+private _hit = getNumber (configFile>> "CfgAmmo" >> _ammo >> "hit");
+private _cnt = getNumber (configFile>> "CfgMagazines" >> _mag >> "count");
 
 if (_hit < 1) then {_hit = 1};
+if (_indirectHit < 1) then {_indirectHit = 1};
+if (_indirectHitRange < 1) then {_indirectHitRange = 1};
 if (_cnt < 1) then {_cnt = 1};
-if (_exprad < 1) then {_exprad = 1};
 _price = 0;
+
+//"shotBullet";"shotSmokeX";"shotShell";"shotIlluminating";
 switch (_type) do {
 default {_price = round ((_hit)*(_cnt)*(ceil _cal)*0.25);if (_price <= 0) then {_price == 50;};};
 case "shotBullet": {_price = round ((_hit)*(_cnt)*(ceil _cal)*0.25);if (_price <= 0) then {_price == 50;};};
-case "shotShell": {_price = round (150*(_cnt)*_exprad*1);if (_price <= 0) then {_price == 50;};};
-case "shotSmokeX": {_price = 100*(_cnt);if (_price <= 0) then {_price == 50;};};
-case "shotIlluminating": {_price = 100*(_cnt);if (_price <= 0) then {_price == 50;};};
-// case "shotSmokeX": {_price = round ((_hit)*(_cnt)*(_cal)*_exprad*1)+100};
-// case "shotIlluminating": {_price = round ((_hit)*(_cnt)*(_cal)*_exprad*1)+100};
+case "shotShell": {_price = round (3*(_cnt)*_indirectHit*_indirectHitRange);if (_price <= 0) then {_price == 50;};};
+case "shotSmokeX": {_price = 100*(_cnt);if (_price <= 0) then {_price == 100;};};
+case "shotIlluminating": {_price = 50*(_cnt);if (_price <= 0) then {_price == 50;};};
+case "shotMissile": {_price = ceil (_hit* ((_indirectHit*_indirectHitRange))*(_cnt));if (_price <= 0) then {_price == 20000;};};
+case "shotRocket": {_price = ceil ((_hit* ((_indirectHit*_indirectHitRange)/2)*(_cnt))/2);if (_price <= 0) then {_price == 10000;};};
 };
-// _price = round ((_hit)*(_cnt)*(_cal)*_exprad*_expcoef*_mult + _base);
-//need a formula here: caliber x count x hit
-
-_price;
+_price
 };
 
 //called from UI
